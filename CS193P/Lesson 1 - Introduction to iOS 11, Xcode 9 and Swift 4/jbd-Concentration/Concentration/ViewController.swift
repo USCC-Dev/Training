@@ -19,7 +19,14 @@ class ViewController: UIViewController {
     // var flipCount: Int = 0
     // OR
     // infered by Swift
-    var flipCount = 0
+    // var flipCount = 0
+    // In Swift you can put code after any property and it will run the code every time the property gets set - this is called a property observer
+    // didSet is observing changes to flipCount
+    var flipCount = 0 {
+        didSet {
+            flipCountLabel.text = "Flips: \(flipCount)"
+        }
+    }
     
     // ! doesn't have to be initalized?
     @IBOutlet weak var flipCountLabel: UILabel!
@@ -48,7 +55,6 @@ class ViewController: UIViewController {
     // rule of thumb, when calling these functions it should sound like you're just talking regularly
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         flipCount += 1
-        flipCountLabel.text = "Flips: \(flipCount)"
         // \() - put something inside there to interpret as a string and embed it as a string
         // print("flipCard(withEmoji: \(emoji))")
         if button.currentTitle == emoji {
