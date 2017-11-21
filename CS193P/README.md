@@ -10,17 +10,6 @@ Developing iOS 11 Apps with Swift from Stanford University taught by Paul Hegart
 [Lesson 5 - Drawing](https://github.com/USCC-Dev/Training/tree/master/CS193P/Lesson%205%20-%20Drawing)  
 [Lesson 6 - Multitouch](https://github.com/USCC-Dev/Training/tree/master/CS193P/Lesson%206%20-%20Multitouch)  
 
-## Contributing  
-Clone the repository  
-`git clone https://github.com/USCC-Dev/Training.git`  
-Think of a 3 letter combination that will represent you (e.g. abc)  
-Make a new 3 letter branch from the master branch  
-`git checkout -b abc master`  
-Give all individual work (folders or a particular file) the same 3 letter prefix that you gave the branch  
-Example folder: `abc-Concentration`  
-Example files: `abc-Notes.md`, `abc-README.md`, `abc-Tips.md`, `abc-Screen Shot.png`  
-Upload and merge when ready  
-
 ### Episodes
 - iOS 11-?
 - iOS 10-13
