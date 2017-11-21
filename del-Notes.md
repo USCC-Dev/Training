@@ -1,3 +1,5 @@
+# Course Notes
+Course notes  
 
 ## Short cut  
 Alt + mouse wheel to zoom in Storyboard mode  
