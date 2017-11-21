@@ -13,6 +13,17 @@ import UIKit
 class ViewController: UIViewController {
     // methods and instance variables go here
 
+    // add instance variable (property) to keep track of flipCount
+    // var flipCount: Int // Error - Class ViewController has no initializer - need initializer after adding this
+    // need an initializer OR just set it
+    // var flipCount: Int = 0
+    // OR
+    // infered by Swift
+    var flipCount = 0
+    
+    // ! doesn't have to be initalized?
+    @IBOutlet weak var flipCountLabel: UILabel!
+    
     // @IBAction is a special directive that XCode puts in your code to allow it to put the circle at the line of the code to connect it to the view
     // func - keyword function
     // touchCard - name of method
@@ -24,7 +35,7 @@ class ViewController: UIViewController {
     // the _ (underbar) means there is no arguement - from Objective-C
     @IBAction func touchCard(_ sender: UIButton) {
         // print on the console
-        print("We have a ghost")
+        // print("We have a ghost")
         // reads "flip the card with the emoji 👻 on the sender button"
         flipCard(withEmoji: "👻", on: sender)
     }
@@ -36,8 +47,10 @@ class ViewController: UIViewController {
     // arguments - external withEmoji & on, internal emoji & button
     // rule of thumb, when calling these functions it should sound like you're just talking regularly
     func flipCard(withEmoji emoji: String, on button: UIButton) {
+        flipCount += 1
+        flipCountLabel.text = "Flips: \(flipCount)"
         // \() - put something inside there to interpret as a string and embed it as a string
-        print("flipCard(withEmoji: \(emoji))")
+        // print("flipCard(withEmoji: \(emoji))")
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControlState.normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
