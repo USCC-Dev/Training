@@ -29,9 +29,15 @@ class ViewController: UIViewController {
         flipCard(withEmoji: "👻", on: sender)
     }
     
+    @IBAction func touchSecondCard(_ sender: UIButton) {
+        flipCard(withEmoji: "🎃", on: sender)
+    }
+
     // arguments - external withEmoji & on, internal emoji & button
     // rule of thumb, when calling these functions it should sound like you're just talking regularly
     func flipCard(withEmoji emoji: String, on button: UIButton) {
+        // \() - put something inside there to interpret as a string and embed it as a string
+        print("flipCard(withEmoji: \(emoji))")
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControlState.normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
