@@ -11,13 +11,13 @@ Lesson 5 - Drawing
 Lesson 6 - Multitouch  
 
 ### Episodes
-- 11-?
-- 10-13
-- 9-10
-- 8-17
-- 7-18
+- iOS 11-?
+- iOS 10-13
+- iOS 9-10
+- iOS 8-17
+- iOS 7-18
 
-#### Get titles from course description
+#### How to programatically get titles from course description
 ```javascript
 // navigate to site https://itunes.apple.com/us/course/developing-ios-11-apps-with-swift/id1309275316
 var lessons = [];
