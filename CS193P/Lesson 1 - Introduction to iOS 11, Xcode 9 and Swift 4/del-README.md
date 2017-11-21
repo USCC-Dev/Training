@@ -8,3 +8,6 @@ Swift is an extremely strongly typed language and strong type inference (it will
 
 Action creates a method  
 Outlet creates an instance variable or property  
+
+Make multiple cards using an array so that the application can be data driven  
+Create an Outlet Collection - an array of things in the UI  
