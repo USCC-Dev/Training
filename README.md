@@ -11,4 +11,4 @@ Make a new 3 letter branch from the master branch
 Give all individual work (folders or a particular file) the same 3 letter prefix that you gave the branch  
 Example folder: `abc-Concentration`  
 Example files: `abc-Notes.md`, `abc-README.md`, `abc-Tips.md`, `abc-Screen Shot.png`  
-Upload and merge when ready  
+Upload to your branch (`abc`) and merge to `staging` when ready  
